@@ -6,6 +6,7 @@ this_directory = os.path.abspath(os.path.dirname(__file__))
 setup(
     name="htfft",
     packages=['htfft'],
+    package_data={"htfft": ['*.j2', '*.vhd', '*.core']}
     use_scm_version={
         "relative_to": __file__,
         "write_to": "htfft/version.py",
